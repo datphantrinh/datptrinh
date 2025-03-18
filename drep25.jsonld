@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "drep25",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://storage.googleapis.com/develop-teko-storage/media/image/2025/2/26/9a4da9da-9e4e-405e-8207-a6fbb36ae4e7/bc.jpg",
+      "sha256": "90a1e5e80377f0201f807ddcae4899b9f17c883c7e361e6e4f80b45fdc85c783"
+    },
+    "qualifications": "{\"sub\": \"b18ab876b09f4708ba32184b9300b714\", \"name\": \"addr_test1qptp7jeqrapl87zlzgsnhxsz8sg7cfnvv93rahzh38sn027mnrehfd0j55rue4dw2c7jghze4mxa7whjeex5gvz4kq0sckz4xy\", \"picture\": \"\", \"email\": \"\", \"phone_number\": \"\", \"address\": \"\", \"birthday\": \"\", \"tenant_id\": \"37\", \"meta_data\": {}, \"blockchain_metadata\": {\"active\": true, \"sub\": \"addr_test1qptp7jeqrapl87zlzgsnhxsz8sg7cfnvv93rahzh38sn027mnrehfd0j55rue4dw2c7jghze4mxa7whjeex5gvz4kq0sckz4xy\", \"username\": \"addr_test1qptp7jeqrapl87zlzgsnhxsz8sg7cfnvv93rahzh38sn027mnrehfd0j55rue4dw2c7jghze4mxa7whjeex5gvz4kq0sckz4xy\", \"networkId\": 9}, \"roles\": [], \"permissions\": []}",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "xdrep25-1",
+        "uri": "https://x.com/drep25-1"
+      }
+    ]
+  }
+}
